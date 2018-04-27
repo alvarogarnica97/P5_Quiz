@@ -10,7 +10,7 @@ router.get('/', function(req, res, next) {
 });
 
 router.get('/credits', function(req, res, next) {
-  res.render('credits', { title:'Quiz', name: 'Álvaro Garnica Navarro' });
+  res.render('credits', { title:'Quiz', name: 'Alvaro Garnica Navarro' });
 });
 
 router.get('/quizzes', function(req, res, next) {
