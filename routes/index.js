@@ -17,6 +17,11 @@ router.get('/quizzes', function(req, res, next) {
 	sequelize.models.quiz.findAll().
 	then( quizzes => {
 		res.render('quizzes', {quizzes});	
+	})
+	.catch(Sequelize.ValidationError, error => {
+		
+	})
+	.catch(error => {
 	});
 });
 
